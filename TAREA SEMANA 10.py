@@ -1,0 +1,14 @@
+# Programa para declarar, recorrer e imprimir una matriz 3x3
+
+# Declarar una matriz de 3x3 con números enteros
+matriz = [
+    [2, 4, 6],
+    [1, 3, 5],
+    [7, 8, 9]
+]
+
+# Recorrer la matriz utilizando ciclos
+for i in range(3):
+    for j in range(3):
+        print(matriz[i][j], end=" ")
+    print()
