@@ -1,0 +1,25 @@
+# Reserva de Asientos de Cine
+
+## Nombre del estudiante
+Poleth Avila
+
+## Objetivo
+Desarrollar un programa en Python que permita reservar un asiento en una sala de cine utilizando una matriz de 3 filas y 4 columnas.
+
+## Funcionamiento
+El programa inicia una matriz de 3 filas y 4 columnas, donde:
+
+- `0` representa un asiento libre.
+- `1` representa un asiento reservado.
+
+El usuario debe ingresar la fila y la columna del asiento que desea reservar. El programa verifica que los valores estén dentro del rango permitido y comprueba si el asiento está disponible.
+
+Si el asiento está libre, se realiza la reserva y su valor cambia de `0` a `1`. Finalmente, se muestra el estado completo de la sala utilizando dos bucles `for` anidados.
+
+## Cómo ejecutar el programa
+
+1. Tener instalado Python.
+2. Abrir el archivo `reserva_cine.py`.
+3. Ejecutar el programa desde Visual Studio Code o desde la terminal.
+4. Ingresar la fila y columna solicitadas.
+5. Verificar el estado de la sala mostrado en pantalla.

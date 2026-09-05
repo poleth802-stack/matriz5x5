@@ -1,0 +1,36 @@
+# Programa para reservar asientos de un cine
+
+# Crear una matriz de 3 filas y 4 columnas con todos los asientos libres
+sala = [
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0]
+]
+
+print("=== RESERVA DE ASIENTOS ===")
+print("Filas disponibles: 0, 1, 2")
+print("Columnas disponibles: 0, 1, 2, 3")
+
+# Solicitar fila y columna
+fila = int(input("Ingrese la fila del asiento: "))
+columna = int(input("Ingrese la columna del asiento: "))
+
+# Validar que la fila y columna estén dentro del rango
+if 0 <= fila < 3 and 0 <= columna < 4:
+
+    # Verificar si el asiento está libre
+    if sala[fila][columna] == 0:
+        sala[fila][columna] = 1
+        print("Reserva realizada correctamente.")
+    else:
+        print("El asiento ya está reservado.")
+
+else:
+    print("Error: la fila o columna está fuera del rango permitido.")
+
+# Mostrar el estado de la sala
+print("\nEstado de la sala:")
+for i in range(3):
+    for j in range(4):
+        print(sala[i][j], end=" ")
+    print()
